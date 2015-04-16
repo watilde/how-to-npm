@@ -1,0 +1,14 @@
+function () {
+  if (!shop.cwd())
+    return ''
+
+
+  return function () { /*
+
+It's almost time to say goodbye.  But don't worry!  This is just an
+introduction.  If you've finished all the other exercises, then run
+`how-to-npm verify` to learn about the next steps beyond this little
+adventure.
+
+*/}.toString().split('\n').slice(1,-1).join('\n')
+}

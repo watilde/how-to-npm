@@ -1,0 +1,16 @@
+function () {
+  if (!shop.cwd())
+    return ''
+
+  reg.run("install-a-module")
+  return function () {/*
+npm isn't just for installing stuff.  It also shows you what you
+have installed.
+
+You can do this using the `npm ls` command.
+
+Run this command in your working dir, and then run
+`how-to-npm verify OK` if everything looks ok,
+or `how-to-npm verify NOT OK` if there was a problem.
+*/}.toString().split('\n').slice(1,-1).join('\n')
+}
