@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var adventure = require('workshopper-adventure')
+var adventure = require('workshopper-adventure/adventure')
 var shop = module.exports = adventure({
   name: 'how-to-npm',
   appDir: __dirname,
@@ -17,6 +17,7 @@ problems.forEach(function (problem) {
   var dir = path.join(__dirname, 'problems', p);
   shop.add(problem, function () { return require(dir); });
 });
+
 
 shop.execute = function (args) {
   // Reset a bit harder, since we save other stuff in there.
