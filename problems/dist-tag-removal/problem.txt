@@ -16,5 +16,3 @@ Let's delete all the tags that we can, and also point "latest" at
 something other than the most recent release.
 
 Run `npm help dist-tag` to learn more about the command.
-*/}.toString().split('\n').slice(1,-1).join('\n')
-}

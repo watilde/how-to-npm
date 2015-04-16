@@ -11,11 +11,11 @@ var fs = require('fs')
 var path = require('path')
 var rimraf = require('rimraf')
 var mkdirp = require('mkdirp')
-var problems = require('./menu.json');
+var problems = require('./menu.json')
 problems.forEach(function (problem) {
-  var p = problem.toLowerCase().replace(/\s/g, '-');
-  var dir = path.join(__dirname, 'problems', p);
-  shop.add(problem, function () { return require(dir); });
+  var p = problem.toLowerCase().replace(/\s/g, '-')
+  var dir = path.join(__dirname, 'problems', p)
+  shop.add(problem, function () { return require(dir) })
 });
 
 
