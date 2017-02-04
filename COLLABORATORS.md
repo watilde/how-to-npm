@@ -22,3 +22,4 @@
 - [zkat](https://github.com/zkat)
 - [zucchinidev](https://github.com/zucchinidev)
 - [stefanmaric](https://github.com/stefanmaric)
+- [daudich](https://github.com/daudich)
